@@ -8,7 +8,7 @@ const soaps = [
   },
   {
     id: 2,
-    title: "Rose-Gold Soap:",
+    title: "Rose-Gold Soap",
     imgName: "rose-gold-soap.jpg",
     description:
       "Curabitur tellus erat, commodo at dapibus ac, tempus quis justo. Suspendisse tempor arcu risus, at euismod nisi ullamcorper id. Sed eros quam, elementum at consequat sit amet, fringilla sed metus. Sed laoreet fermentum augue. Quisque viverra magna vitae vehicula sodales. Mauris scelerisque pellentesque maximus. Praesent sed augue luctus, sollicitudin tortor at, aliquam ex. ",
