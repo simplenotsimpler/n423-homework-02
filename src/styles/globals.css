@@ -1,0 +1,125 @@
+:root {
+  /* Colors */
+  --color-primary: #ef767a;
+  --color-secondary: #f8f8f8;
+  --color-dark: #000000;
+
+  /* padding */
+  /* for nav & footer */
+  --padding-outer: 1.5rem;
+
+  /* Weights */
+  --hairline-weight: 100;
+  --thin-weight: 200;
+  --light-weight: 300;
+  /* regular per https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight */
+  --regular-weight: 400;
+  --medium-weight: 500;
+  --semibold-weight: 600;
+  --bold-weight: 700;
+  --xbold-weight: 800;
+  --dark-weight: 900;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* base styles  */
+body {
+  font-size: 1rem;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* font faces */
+/* NOTE: there is a bug with the browser freezing:
+  https://github.com/vercel/next.js/issues/10061
+  This is particularly noticeable with working with traditional font files
+*/
+
+/* Roboto */
+/* Order is fragile and struggling to get both the Bold & light to work */
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Regular.ttf");
+  font-weight: var(--regular-weight);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Bold.ttf");
+  font-weight: var(--bold-weight);
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-BoldItalic.ttf");
+  font-weight: var(--bold-weight);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("/fonts/Roboto/Roboto-Light.ttf");
+  font-weight: var(--light-weight);
+}
+
+/* lora-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400;
+  src: url("/fonts/Lora/lora-v32-latin-regular.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("/fonts/Lora/lora-v32-latin-regular.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lora-italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400;
+  src: url("/fonts/Lora/lora-v32-latin-italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("/fonts/Lora/lora-v32-latin-italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* https://webdesign.tutsplus.com/tutorials/how-to-self-host-google-fonts--cms-34775 */
+/* downloaded via https://gwfh.mranftl.com/fonts/lora?subsets=latin */
+/* lora-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  src: url("/fonts/Lora/lora-v32-latin-700.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("/fonts/Lora/lora-v32-latin-700.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+
+/* lora-700italic - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 700;
+  src: url("/fonts/Lora/lora-v32-latin-700italic.woff2") format("woff2"),
+    /* Chrome 36+, Opera 23+, Firefox 39+ */
+      url("/fonts/Lora/lora-v32-latin-700italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}

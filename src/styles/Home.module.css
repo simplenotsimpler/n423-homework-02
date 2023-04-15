@@ -1,0 +1,18 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 65px;
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 1rem;
+  letter-spacing: 1.6px;
+  line-height: 21px;
+  gap: 103px;
+}
+
+.home p {
+  max-width: 513px;
+  max-height: 322px;
+  overflow: hidden;
+}

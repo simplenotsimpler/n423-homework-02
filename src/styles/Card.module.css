@@ -1,0 +1,40 @@
+.card {
+  display: flex;
+  gap: 56px;
+  padding: 61px;
+}
+
+.roundImg {
+  width: 159px;
+  height: 159px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -50px;
+}
+.cardBody {
+  display: flex;
+  flex-direction: column;
+}
+.cardTitle {
+  color: var(--color-primary);
+  font-family: "Roboto";
+  font-weight: var(--bold-weight);
+  font-style: italic;
+  font-size: 1.313rem;
+  letter-spacing: 2.1px;
+  line-height: 28px;
+
+  margin-bottom: 1.688rem;
+}
+
+.cardText {
+  font-family: "Lora";
+  font-style: italic;
+  font-size: 1.125rem;
+  letter-spacing: 1.8px;
+  line-height: 24px;
+
+  width: 363px;
+  height: 156px;
+  overflow: hidden;
+}

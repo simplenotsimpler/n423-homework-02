@@ -1,0 +1,42 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--padding-outer);
+  height: 70px;
+}
+
+.navmenu li a {
+  text-decoration: none;
+  font-size: 1rem;
+  letter-spacing: 1.6px;
+  line-height: 21px;
+}
+
+.navmenu {
+  display: flex;
+  gap: 5.75rem;
+}
+
+.linkActive {
+  color: var(--color-primary);
+  font-family: "Roboto";
+  font-weight: var(--bold-weight);
+  font-style: italic;
+}
+
+.linkInactive {
+  color: var(--color-dark);
+  font-family: "Roboto";
+  font-weight: var(--light-weight);
+}
+
+/* TODO: bold not working */
+.logo {
+  font-size: 1.375rem;
+  color: var(--color-primary);
+  font-family: "Roboto";
+  font-weight: var(--bold-weight);
+  letter-spacing: 2.2px;
+  line-height: 29px;
+}
