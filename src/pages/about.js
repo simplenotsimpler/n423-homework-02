@@ -1,19 +1,16 @@
 import Card from "@/components/Card.jsx";
 import styles from "../styles/About.module.css";
 import owners from "@/data/owners.js";
+import CardList from "@/components/CardList.jsx";
 
 const About = () => {
-  let profileCards = owners.map((el) => {
-    return (
-      <Card
-        key={el.id}
-        title={el.title}
-        text={el.description}
-        imgName={el.imgName}
-      />
-    );
-  });
-  return <section className={styles.about}>{profileCards}</section>;
+  return (
+    <>
+      <section className={styles.about}>
+        <CardList data={owners} />
+      </section>
+    </>
+  );
 };
 
 export default About;

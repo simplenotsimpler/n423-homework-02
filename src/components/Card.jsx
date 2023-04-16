@@ -1,8 +1,9 @@
 import CardStyles from "../styles/Card.module.css";
 
+//if time, convert this to select correct semantic element 
 const Card = ({ title, text, imgName }) => {
   return (
-    <article className={CardStyles.card}>
+    <li className={CardStyles.card}>
       <img
         src={`/images/${imgName}`}
         className={CardStyles.roundImg}
@@ -12,7 +13,7 @@ const Card = ({ title, text, imgName }) => {
         <h1 className={CardStyles.cardTitle}>{title}</h1>
         <p className={CardStyles.cardText}>{text}</p>
       </div>
-    </article>
+    </li>
   );
 };
 

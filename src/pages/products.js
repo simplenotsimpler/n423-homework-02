@@ -1,14 +1,15 @@
-import Card from "@/components/Card.jsx";
 import styles from "../styles/Products.module.css";
 import soaps from "@/data/soaps.js";
+import CardList from "@/components/CardList.jsx";
 
 const Products = () => {
-  let soapCards = soaps.map((el) => {
-    return (
-      <Card key={el.id} title={el.title} text={el.description} imgName={el.imgName} />
-    );
-  });
-  return <section className={styles.products}>{soapCards}</section>;
+  return (
+    <>
+      <section className={styles.products}>
+        <CardList data={soaps} />
+      </section>
+    </>
+  );
 };
 
 export default Products;
