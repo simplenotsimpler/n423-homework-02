@@ -1,0 +1,39 @@
+.modal {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal div {
+  background-color: #fff;
+  width: 75%;
+  padding: 24px;
+}
+
+.modal div p {
+  margin-bottom: 1.5rem;
+}
+
+.modal button {
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 16px;
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: bold;
+  font-family: "Roboto";
+  cursor: pointer;
+}
+
+.trigger {
+  cursor: pointer;
+}
