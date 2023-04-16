@@ -15,6 +15,11 @@
   display: flex;
   flex-direction: column;
 }
+
+.card .cardBody a {
+  text-decoration: none;
+}
+
 .cardTitle {
   color: var(--color-primary);
   font-family: "Roboto";

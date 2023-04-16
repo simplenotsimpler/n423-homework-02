@@ -6,7 +6,7 @@ const Products = () => {
   return (
     <>
       <section className={styles.products}>
-        <CardList data={soaps} />
+        <CardList data={soaps} detailPath="/products" />
       </section>
     </>
   );
