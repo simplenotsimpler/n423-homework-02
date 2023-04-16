@@ -12,6 +12,7 @@ const CardList = ({ data, detailPath }) => {
           text={el.description}
           imgName={el.imgName}
           href={detailPath ? `${detailPath}/${el.id}` : undefined}
+          isDetail={false}
         />
       </li>
     );

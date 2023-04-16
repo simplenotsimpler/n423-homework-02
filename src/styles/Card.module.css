@@ -1,7 +1,7 @@
 .card {
   display: flex;
   gap: 56px;
-  padding: 61px;
+  margin-bottom: 61px;
 }
 
 .roundImg {
@@ -9,12 +9,20 @@
   height: 159px;
   object-fit: cover;
   border-radius: 50%;
-  margin-top: -50px;
 }
+
+.squareImgLg {
+  width: 305px;
+  height: 305px;
+  object-fit: cover;
+}
+
 .cardBody {
   display: flex;
   flex-direction: column;
+  padding-top: 40px;
 }
+
 
 .card .cardBody a {
   text-decoration: none;
@@ -40,6 +48,4 @@
   line-height: 24px;
 
   width: 363px;
-  height: 156px;
-  overflow: hidden;
 }

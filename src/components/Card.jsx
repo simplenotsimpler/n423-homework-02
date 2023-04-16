@@ -7,7 +7,7 @@ import Link from "next/link.js";
   https://queen.raae.codes/emails/2022-10-10-semantic-react/
 */
 
-const Card = ({ title, text, imgName, href }) => {
+const Card = ({ title, text, imgName, href, isDetail }) => {
   //Ideally, could make this conditional so don't repeat code
   //e.g. https://stackoverflow.com/questions/37218833/conditionally-linking-with-react-router-link
   if (href) {
@@ -16,7 +16,7 @@ const Card = ({ title, text, imgName, href }) => {
         <Link href={href}>
           <img
             src={`/images/${imgName}`}
-            className={CardStyles.roundImg}
+            className={isDetail ? CardStyles.squareImgLg : CardStyles.roundImg}
             alt={title}
           />
         </Link>
@@ -35,7 +35,7 @@ const Card = ({ title, text, imgName, href }) => {
     <div className={CardStyles.card}>
       <img
         src={`/images/${imgName}`}
-        className={CardStyles.roundImg}
+        className={isDetail ? CardStyles.squareImgLg : CardStyles.roundImg}
         alt={title}
       />
       <div className={CardStyles.cardBody}>

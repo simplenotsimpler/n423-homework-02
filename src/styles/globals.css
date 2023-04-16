@@ -123,3 +123,25 @@ ul {
     /* Chrome 36+, Opera 23+, Firefox 39+ */
       url("/fonts/Lora/lora-v32-latin-700italic.woff") format("woff"); /* Chrome 5+, Firefox 3.6+, IE 9+, Safari 5.1+ */
 }
+
+/* base styles */
+
+.sectionContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 25px;
+  padding-bottom: 46px;
+}
+
+.sectionContentDetail {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  padding-top: 65px;
+  padding-bottom: 46px;
+}

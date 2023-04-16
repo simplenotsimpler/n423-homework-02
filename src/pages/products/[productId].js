@@ -10,11 +10,12 @@ const ProductDetailPage = () => {
 
   return (
     <>
-      <section className="productDetail">
+      <section className="sectionContentDetail">
         <Card
           imgName={currentProduct.imgName}
           title={currentProduct.title}
           text={currentProduct.description}
+          isDetail={true}
         />
       </section>
     </>

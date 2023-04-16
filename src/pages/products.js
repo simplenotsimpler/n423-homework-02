@@ -1,11 +1,10 @@
-import styles from "../styles/Products.module.css";
 import soaps from "@/data/soaps.js";
 import CardList from "@/components/CardList.jsx";
 
 const Products = () => {
   return (
     <>
-      <section className={styles.products}>
+      <section className="sectionContent">
         <CardList data={soaps} detailPath="/products" />
       </section>
     </>
