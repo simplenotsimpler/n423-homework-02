@@ -1,13 +1,31 @@
 import Card from "@/components/Card.jsx";
-import { useRouter } from "next/router.js";
-import soaps from "../../data/soaps.js";
+import soaps from "../api/soaps.json";
 
-const ProductDetailPage = () => {
-  const router = useRouter();
-  const { productId } = router.query;
-
+export async function getStaticProps(ctx) {
+  const productId = ctx.params.productId;
   const currentProduct = soaps.find((soap) => soap.id === productId);
 
+  return {
+    props: {
+      currentProduct,
+    },
+  };
+}
+
+// build our paths
+export const getStaticPaths = async () => {
+  const paths = soaps.map((soap) => {
+    return {
+      params: { productId: soap.id },
+    };
+  });
+  return {
+    paths,
+    fallback: false,
+  };
+};
+
+const ProductDetailPage = ({ currentProduct }) => {
   return (
     <>
       <section className="sectionContentDetail">
