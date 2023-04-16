@@ -4,3 +4,7 @@
 
 Vercel URL:
 https://n423-homework-02.vercel.app/
+
+## Notes
+
+Modal: Privacy Policy
